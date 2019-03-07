@@ -22,7 +22,7 @@ defmodule AuthApiWeb.Router do
   scope "/api/v1", AuthApiWeb do
     pipe_through [:api, :jwt_authenticated]
 
-    get "/my_user", UserController, :show
+    get "/get_user", UserController, :show
   end
 
 end
